@@ -1,0 +1,26 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    height: 60vw;
+    margin: 5vh auto;
+    border: 1px solid #000;
+}
+
+.square {
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}

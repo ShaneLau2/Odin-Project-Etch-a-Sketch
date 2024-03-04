@@ -1,0 +1,1 @@
+use dom and event listener to control page
