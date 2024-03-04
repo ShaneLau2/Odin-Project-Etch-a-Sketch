@@ -121,14 +121,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else {
                     // Retrieve the RGBA values
                     rgba = square.dataset.color.split(",");
+                    // Increase opacity by 10%
+                    rgba[3] = Math.min(parseFloat(rgba[3]) + 0.1, 1);
+
+                    // Apply the new color
+                    square.style.backgroundColor = `rgba(${rgba[0]}, ${rgba[1]}, ${rgba[2]}, ${rgba[3]})`;
+                    square.dataset.color = rgba; // Store the updated RGBA values
                 }
-
-                // Increase opacity by 10%
-                rgba[3] = Math.min(parseFloat(rgba[3]) + 0.1, 1);
-
-                // Apply the new color
-                square.style.backgroundColor = `rgba(${rgba[0]}, ${rgba[1]}, ${rgba[2]}, ${rgba[3]})`;
-                square.dataset.color = rgba; // Store the updated RGBA values
             });
         }
     }
